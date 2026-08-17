@@ -100,4 +100,29 @@ public class Person implements Displayable {
         this.address = address;
     }
 
+    @Override
+    public void displayInfo() {
+        IO.println(
+                "Person: " +firstName+ " "
+                        +lastName+ "(id: "+id+")");
+    }
+
+    @Override
+    public String displaySummary() {
+        return id + " _ " + firstName + " " + lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{id="+id+", name="+firstName+" "+lastName+"}";
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null) return false;
+        if (!(other instanceof Person)) return false;
+        Person p = (Person) other;
+        return this.id.equals(p.id);
+    }
 }
