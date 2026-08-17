@@ -71,4 +71,20 @@ public class Student extends Person{
     public void addSubjects(String subject) {
         subjects.add(subject);
     }
+
+
+    public void updateContact(String phone) {
+        setPhoneNumber(phone);
+    }
+    public void updateContact(String phone, String email) {
+        setPhoneNumber(phone);
+        setEmail(email);
+    }
+
+    @Override
+    public void displayInfo() {
+        IO.println("Student: " + getFirstName() + " " + getLastName()
+                + " | grade: " + gradeLevel
+                + " | fee balance: " + feeBalance);
+    }
 }
