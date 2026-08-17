@@ -1,8 +1,9 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class Student extends Person{
     private String gradeLevel;
     private String enrollmentDate;
     private double feeBalance;
@@ -20,6 +21,17 @@ public class Student {
             ,String enrollmentDate
             ,double feeBalance
     ) {
-
+        super(id
+                ,firstName
+                , lastName
+                , dateOfBirth
+                , gender
+                , phoneNumber
+                , email
+                , address);
+        this.gradeLevel = gradeLevel;
+        this.enrollmentDate = enrollmentDate;
+        setFeeBalance(feeBalance);
+        this.subjects = new ArrayList<>();
     }
 }
