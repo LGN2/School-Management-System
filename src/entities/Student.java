@@ -50,4 +50,25 @@ public class Student extends Person{
     public List<String> getSubjects() {
         return subjects;
     }
+
+    public void setGradeLevel(String gradeLevel) {
+        this.gradeLevel = gradeLevel;
+    }
+
+    public void setEnrollmentDate(String enrollmentDate) {
+        this.enrollmentDate = enrollmentDate;
+    }
+
+    public void setFeeBalance(double feeBalance) {
+        if (feeBalance < 0) {
+            IO.println("Fee cannot be below 0. Keeping it at 0.");
+            this.feeBalance = 0;
+            return;
+        }
+        this.feeBalance = feeBalance;
+    }
+
+    public void addSubjects(String subject) {
+        subjects.add(subject);
+    }
 }
