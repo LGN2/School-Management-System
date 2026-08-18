@@ -22,7 +22,7 @@ public class Teacher extends Person{
             ,double salary
     ) {
         super(id
-                ,firstName
+                , firstName
                 , lastName
                 , dateOfBirth
                 , gender
@@ -35,5 +35,20 @@ public class Teacher extends Person{
         this.classesTaught = new ArrayList<>();
     }
 
+    public String getSubject() {
+        return subject;
+    }
+
+    public int getExperienceYears() {
+        return experienceYears;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public List<String> getClassesTaught() {
+        return classesTaught;
+    }
 
 }
