@@ -79,4 +79,12 @@ public class Teacher extends Person{
         setSalary(salary);
         System.out.println("Salary updated. Reason: " + reason);
     }
-}
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Teacher: " + getFirstName()
+                + " " + getLastName()
+                + " | subject: " + subject
+                + " | experience: " + experienceYears + " years");
+        }
+    }
