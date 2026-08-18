@@ -1,6 +1,6 @@
 package entities;
 
-public class HeadTeacher extends Teacher{
+public class HeadTeacher extends Teacher {
     private String department;
     private int teachersManaged;
 
@@ -42,5 +42,9 @@ public class HeadTeacher extends Teacher{
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public void addManagedTeacher() {
+        teachersManaged = teachersManaged + 1;
     }
 }
