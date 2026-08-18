@@ -30,7 +30,7 @@ public class Teacher extends Person{
                 , email
                 , address);
         this.subject = subject;
-        setExperienveYears(experienceYears);
+        setExperienceYears(experienceYears);
         this.salary = salary;
         this.classesTaught = new ArrayList<>();
     }
