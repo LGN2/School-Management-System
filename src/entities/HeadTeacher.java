@@ -39,4 +39,8 @@ public class HeadTeacher extends Teacher{
     public int getTeachersManaged() {
         return teachersManaged;
     }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
 }
