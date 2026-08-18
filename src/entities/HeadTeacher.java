@@ -1,4 +1,5 @@
 package entities;
 
-public class HeadTeacher {
+public class HeadTeacher extends Teacher{
+
 }
