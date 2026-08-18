@@ -72,4 +72,11 @@ public class Teacher extends Person{
         classesTaught.add(className);
     }
 
+    public void updateSalary(double salary) {
+        setSalary(salary);
+    }
+    public void updateSalary(double salary, String reason) {
+        setSalary(salary);
+        System.out.println("Salary updated. Reason: " + reason);
+    }
 }
