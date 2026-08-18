@@ -31,4 +31,12 @@ public class SeniorStudent extends Student{
         this.major = major;
         this.gpa = gpa;
     }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public double getGpa() {
+        return gpa;
+    }
 }
