@@ -51,4 +51,22 @@ public class Teacher extends Person{
         return classesTaught;
     }
 
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void setExperienceYears(int experienceYears) {
+        if (experienceYears < 0) {
+            IO.println("Experience cannot be below 0. Keeping it at 0.");
+            this.experienceYears = 0;
+            return;
+        }
+        this.experienceYears = experienceYears;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+
 }
